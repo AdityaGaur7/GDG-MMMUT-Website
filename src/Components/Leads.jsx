@@ -1,9 +1,23 @@
 import React from 'react'
+import AllLeads from '@/utils/AllLeads'
+import {Advisor} from '@/utils/Advisor'
 
 function Leads() {
+
+
   return (
-    <div className='h-[30rem] w-full'>
-        <h1 className='font-bold text-3xl text-red-200'>Core Team of GDG-MMMUT</h1>
+    <div className='h-fit w-full p-[2rem] flex flex-col flex-wrap'>
+      <h1 className='font-bold text-4xl text-red-400 m-5 justify-self-center pb-[2rem]'>Core Team of GDG-MMMUT</h1>
+      <div className='w-full h-[90%] flex flex-row justify-around p-5 '>
+        {/* md:flex md:flex-row sm:flex sm:flex-row */}
+        <div className='w-[30%] h-[100%] bg-blue-200 p-[2rem] '>
+          <h1 className='font-bold text-2xl text- text-[#0F9D58] justify-self-center'>Faculty Advisor</h1>
+          <Advisor />
+        </div>
+        <div className='w-[60%] bg-blue-500'>
+          <AllLeads />
+        </div>
+      </div>
     </div>
   )
 }

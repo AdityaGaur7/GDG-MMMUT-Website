@@ -36,8 +36,16 @@ export default {
 				}
 			},
 			animation: {
-				'fade-in-out': 'fade-in-out 3s ease-in-out infinite'
+				'fade-in-out': 'fade-in-out 3s ease-in-out infinite',
+				'scale-up-down': 'scaleUpDown 1s infinite ease-in-out',
 			},
+			keyframes: {
+				scaleUpDown: {
+				  '0%': { transform: 'scale(1)' },
+				  '50%': { transform: 'scale(1.07)' },
+				  '100%': { transform: 'scale(1)' },
+				},
+			  },
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',

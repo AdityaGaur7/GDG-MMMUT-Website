@@ -1,9 +1,23 @@
 import React from 'react'
 import gdgLogo from './../assets/GdgLogo.svg';
+import { Button } from "@/components/ui/button"
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogFooter,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+} from "@/components/ui/dialog"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import Contact from '../utils/Contact';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
-        <div>
+        <div className='m-2'>
             <ul className='flex flex-row items-center justify-between px-5shad'>
                 <div>
                     <li>
@@ -12,11 +26,13 @@ function Header() {
                 </div>
                 <div className='flex gap-7 text-2xl'>
                     <li>
-                        <h2>Home</h2>
+                        <Link to={'/'}><h2>Home</h2></Link>
                     </li>
-                    <li>Team</li>
+                    <Link to={'/team'}><li>Team</li></Link>
                     <li>Events</li>
-                    <li>Contact</li>
+                    <li>
+                        <Contact/>
+                    </li>
                     <li>
                         <button
                             className="mt-1 w-full rounded bg-teal-500 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-teal-600 sm:mt-0 sm:w-auto sm:shrink-0"

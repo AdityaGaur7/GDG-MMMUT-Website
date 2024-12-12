@@ -8,6 +8,7 @@ import Leads from '@/Components/Leads';
 import About from '@/Components/About';
 import Footer from '../Components/Footer';
 import { Separator } from "@/components/ui/separator"
+import Sponser from '../Components/sponsers';
 
 
 
@@ -29,6 +30,8 @@ function Home() {
         {/* about */}
         <About/>
         <Separator/>
+        {/* Sponsers */}
+        <Sponser/>
         {/* Footer */}
         
         <Footer/>

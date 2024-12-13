@@ -1,7 +1,6 @@
 {
-  "name": "react",
-  "private": true,
-  "version": "0.0.0",
+  "name": "your-project",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -30,7 +29,10 @@
     "react-router-dom": "^7.0.2",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
-    "vaul": "^1.1.1"
+    "vaul": "^1.1.1",
+    "vite": "^4.2.0",
+    "@vitejs/plugin-react": "^4.3.4"
+
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",

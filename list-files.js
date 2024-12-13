@@ -2,6 +2,10 @@ import fs from 'fs';
 import path from 'path';
 
 const listFiles = (dir) => {
+  if (!fs.existsSync(dir)) {
+    console.error(`Directory does not exist: ${dir}`);
+    return;
+  }
   const files = fs.readdirSync(dir);
   files.forEach((file) => {
     const filePath = path.join(dir, file);

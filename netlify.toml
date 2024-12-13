@@ -1,5 +1,5 @@
 [build]
-  command = "./list-files.sh && npm run build"
+  command = "node list-files.js && npm run build"
   publish = "dist"
   base = "/"
 

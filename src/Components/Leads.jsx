@@ -1,6 +1,6 @@
 import React from 'react'
-import AllLeads from '@/utils/AllLeads'
-import {Advisor} from '@/utils/Advisor'
+import AllLeads from '@/utils/AllLeads.jsx'
+import Advisor from '@/utils/Advisor.jsx'
 
 function Leads() {
 

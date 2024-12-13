@@ -1,8 +1,8 @@
 import React from 'react'
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar.jsx"
 
 
-export function Advisor() {
+export default function Advisor() {
     return (
         <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg object-center">
             {/* <img

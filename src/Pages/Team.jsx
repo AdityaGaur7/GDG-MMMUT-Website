@@ -1,9 +1,9 @@
-import Footer from '@/Components/Footer'
-import Header from '@/Components/Header'
+import Footer from '@/Components/Footer.jsx'
+import Header from '@/Components/Header.jsx'
 import React from 'react'
-import { AdvisorBrief } from '@/utils/Advisor';
-import FormerLeads from '@/Components/FormerLeads';
-import FirstYear from '@/Components/FirstYear';
+import { AdvisorBrief } from '@/utils/Advisor.jsx';
+import FormerLeads from '@/Components/FormerLeads.jsx';
+import FirstYear from '@/Components/FirstYear.jsx';
 
 
 function Team() {

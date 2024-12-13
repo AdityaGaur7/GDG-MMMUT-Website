@@ -1,14 +1,13 @@
 import React from 'react'
-import Header from '../Components/Header'
-import Content from '../Components/Content'
-import gdgLogo from './../assets/gdgbg.svg';
-import RecentWinner from '../Components/RecentWinner';
-import GoogleCloudEvent from '@/Components/GoogleCloudEvent';
-import Leads from '@/Components/Leads';
-import About from '@/Components/About';
-import Footer from '../Components/Footer';
-import { Separator } from "@/components/ui/separator"
-import Sponser from '../Components/sponsers';
+import Header from '../Components/Header.jsx'
+import Content from '../Components/Content.jsx'
+import RecentWinner from '../Components/RecentWinner.jsx';
+import GoogleCloudEvent from '@/Components/GoogleCloudEvent.jsx';
+import Leads from '@/Components/Leads.jsx';
+import About from '@/Components/About.jsx';
+import Footer from '../Components/Footer.jsx';
+//import Separator from "@/components/ui/separator.jsx"
+import Sponser from '../Components/Sponsers.jsx';
 
 
 
@@ -22,14 +21,14 @@ function Home() {
         <Content />
         {/* Recent Winner */}
         <RecentWinner/>
-        <Separator className='border-4'/>
+        <hr className='border-4'/>
         {/* cloud events */}
         <GoogleCloudEvent/>
         {/* lead and faculty advicer */}
         <Leads/>
         {/* about */}
         <About/>
-        <Separator/>
+        <hr/>
         {/* Sponsers */}
         <Sponser/>
         {/* Footer */}

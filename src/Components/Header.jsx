@@ -1,18 +1,6 @@
 import React from 'react'
 import gdgLogo from './../assets/GdgLogo.svg';
-import { Button } from "@/components/ui/button"
-import {
-    Dialog,
-    DialogContent,
-    DialogDescription,
-    DialogFooter,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
-} from "@/components/ui/dialog"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import Contact from '../utils/Contact';
+import Contact from '../utils/Contact.jsx';
 import { Link } from 'react-router-dom';
 
 function Header() {

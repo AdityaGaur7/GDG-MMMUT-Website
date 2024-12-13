@@ -1,20 +1,21 @@
 import React from 'react'
-import { Button } from "@/components/ui/button"
 import {
     Dialog,
     DialogContent,
-    DialogDescription,
-    DialogFooter,
-    DialogHeader,
-    DialogTitle,
     DialogTrigger,
-} from "@/components/ui/dialog"
+} from "@/components/ui/dialog.jsx"
 
 function Contact() {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <Button variant="outline" className='border-none shadow-none text-2xl font-normal p-0 m-0'>Contact</Button>
+                {/* <Button variant="outline" className='border-none shadow-none text-2xl font-normal p-0 m-0'>Contact</Button> */}
+                <button
+                    type="submit"
+                    className="border-none shadow-none text-2xl font-normal p-0 m-0"
+                >
+                Contact
+                </button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[425px]">
                 <div className="mx-auto max-w-screen-xl w-full px-4 py-16 sm:px-6 lg:px-8">

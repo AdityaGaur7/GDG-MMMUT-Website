@@ -1,10 +1,7 @@
 "use client"
 
-import * as React from "react"
-import { Minus, Plus } from "lucide-react"
-
-import { Button } from "@/components/ui/button"
-import { FaQuestion } from "react-icons/fa";
+/* 
+import { Button } from "@/components/ui/button.jsx"; */
 import {
     Drawer,
     DrawerClose,
@@ -14,7 +11,8 @@ import {
     DrawerHeader,
     DrawerTitle,
     DrawerTrigger,
-} from "@/components/ui/drawer"
+} from "@/components/ui/drawer";
+import { FaQuestion } from "react-icons/fa";
 
 
 
@@ -25,11 +23,17 @@ export function DrawerDemo({ label, color }) {
     return (
         <Drawer>
             <DrawerTrigger asChild>
-                <Button variant="outline" className={`text-[${color}]`}>
+                {/* <Button variant="outline" className={`text-[${color}]`}>
                     {label}
                     <FaQuestion className='text-xl' />
                 </Button>
-
+ */}
+                            <button
+                                type="submit"
+                                className={`block w-full rounded-lg text-[${color}] bg-teal-500 px-5 py-3 text-sm font-medium text-white hover:scale-102 hover:shadow-md shadow-blue-300`}
+                            >
+                                {label}
+                            </button>
             </DrawerTrigger>
             <DrawerContent className="text-blue-400 bg-red-50">
                 <div className="mx-auto w-full max-w-sm">
@@ -42,7 +46,7 @@ export function DrawerDemo({ label, color }) {
                     </div>
                     <DrawerFooter>
                         <DrawerClose asChild>
-                            <Button variant="outline">Close</Button>
+                            <button>Close</button>
                         </DrawerClose>
                     </DrawerFooter>
                 </div>

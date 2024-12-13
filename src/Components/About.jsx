@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutImage from './../assets/aboutImage.svg';
-import { DrawerDemo } from '../utils/AboutEach';
+import DrawerDemo from '../utils/AboutEach.jsx';
 
 function About() {
     return (
@@ -12,7 +12,7 @@ function About() {
                                 <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">
                                     WHAT, WHY, HOW GDG-MMMUT
                                 </h2>
-
+                                {/* This is a comment */}
                                 <p className="mt-4 text-gray-700">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque saepe
                                     architecto maiores repudiandae amet perferendis repellendus, reprehenderit voluptas

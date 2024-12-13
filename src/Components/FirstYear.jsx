@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaQuestion } from "react-icons/fa";
-import { Button } from "@/components/ui/button"
+// import {Button} from "@/components/ui/button.jsx"
 import {
     Drawer,
     DrawerClose,
@@ -11,7 +11,7 @@ import {
     DrawerTitle,
     DrawerTrigger,
 } from "@/components/ui/drawer"
-import RecruitmentHead from '@/utils/recruitmenthead';
+import RecruitmentHead from '@/utils/recruitmenthead.jsx';
 
 
 function FirstYear() {
@@ -20,10 +20,10 @@ function FirstYear() {
             <RecruitmentHead/>
             <Drawer className=''>
                 <DrawerTrigger asChild>
-                    <Button variant="outline" className='text-[#DB4437]'>
+                    <button className='text-[#DB4437]'>
                         First Know the Criterias
                         <FaQuestion className='text-xl' />
-                    </Button>
+                    </button>
 
                 </DrawerTrigger>
                 <DrawerContent className="text-blue-400 bg-red-50">
@@ -36,12 +36,16 @@ function FirstYear() {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae similique magni fugit eos, porro sapiente et quas id quae, qui illum. Beatae eligendi eos corrupti maiores, eius vitae. Reprehenderit odio aperiam mollitia. Assumenda commodi error dolor dignissimos. Tenetur, consequuntur soluta asperiores doloremque recusandae, dolores molestiae nobis quam esse repellendus quod possimus culpa blanditiis minima sit, dolorum voluptas est! Error reiciendis molestiae natus accusamus modi vitae, laudantium excepturi eum ut consequatur qui velit, laborum quasi architecto a ea officiis non distinctio consequuntur quis sit! Incidunt commodi tenetur libero vero voluptatem, rem culpa? Quasi natus nesciunt vel architecto debitis autem, quaerat enim.
                         </div>
                         <h1 className='text-xl text-[#DB4437]'>Apllication not Started Yet</h1>
-                        <Button variant="outline" className='text-[#DB4437] bg-red-50'>Notify me !</Button>
+                        {/* <Button variant="outline" className='text-[#DB4437] bg-red-50'>Notify me !</Button> */}
+                        <button
+                                type="submit"
+                                className="block w-full rounded-lg bg-teal-500 px-5 py-3 text-sm font-medium text-white hover:scale-102 hover:shadow-md shadow-blue-300"
+                            >
+                                Notify Me
+                            </button>
                         <DrawerFooter>
                             <DrawerClose asChild>
-                                <Button variant="outline">Close</Button>
-                                
-                                
+                                <button>Close</button>                                
                             </DrawerClose>
                         </DrawerFooter>
                     </div>
@@ -50,5 +54,5 @@ function FirstYear() {
         </div>
     )
 }
-
+//had a change
 export default FirstYear

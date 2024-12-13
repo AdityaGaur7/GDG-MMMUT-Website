@@ -7,11 +7,12 @@ import Leads from '@/Components/Leads.jsx';
 import About from '@/Components/About.jsx';
 import Footer from '../Components/Footer.jsx';
 //import Separator from "@/components/ui/separator.jsx"
-import Sponser from '../Components/Sponsers.jsx';
+import Sponser from './../Components/Sponsers.jsx';
 
 
 
 function Home() {
+
   return (
     <div>
       <div className='bg-[url({gdglogo})]'>
@@ -30,6 +31,10 @@ function Home() {
         <About/>
         <hr/>
         {/* Sponsers */}
+        <h1 className='text-4xl m-5 justify-self-center font-bold'>
+        <span className='text-[#0F9D58] '>Our</span>
+        <span className='text-[#F4B400] '>&nbsp;Sponsers</span>
+        </h1>
         <Sponser/>
         {/* Footer */}
         

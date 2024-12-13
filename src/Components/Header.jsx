@@ -21,13 +21,14 @@ function Header() {
                     <li>
                         <Contact/>
                     </li>
+                    <Link to={'/signup'}>
                     <li>
                         <button
-                            className="mt-1 w-full rounded bg-teal-500 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-teal-600 sm:mt-0 sm:w-auto sm:shrink-0"
+                            className="mt-1 w-full rounded px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none border-blue-600 bg-blue-600 hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500 sm:mt-0 sm:w-auto sm:shrink-0"
                         >
                             Sign Up
                         </button>
-                    </li>
+                    </li></Link>
                 </div>
             </ul>
 

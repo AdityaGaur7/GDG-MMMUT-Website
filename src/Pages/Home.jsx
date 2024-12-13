@@ -37,7 +37,6 @@ function Home() {
         </h1>
         <Sponser/>
         {/* Footer */}
-        
         <Footer/>
       </div>
     </div>

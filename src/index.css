@@ -5,6 +5,7 @@
 @layer base {
   html {
     @apply text-neutral-800;
+    scroll-behavior: smooth;
   }
 
   html.dark {

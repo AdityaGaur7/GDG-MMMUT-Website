@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import pointerBtn from './../assets/pointerBtn.svg';
+import { Link } from 'react-router-dom';
+
 
 function Content() {
     const [showPointer, setShowPointer] = useState(false);
@@ -28,9 +30,11 @@ function Content() {
             <div className='w-full flex justify-center items-center'>
             <div className="relative w-20 h-20 flex items-center justify-center">
                 {/* Image container */}
-                <div className={`absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white px-4 py-2 rounded-full bg-white shadow-md transition-opacity duration-300 ${showPointer ? 'opacity-100 shadow-xl' : 'opacity-0'}`}>
-                    <img src={pointerBtn} alt="click image" loading='lazy' />
-                </div>
+                    <div className={`absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white px-4 py-2 rounded-full bg-white shadow-md transition-opacity duration-300 ${showPointer ? 'opacity-100 shadow-xl' : 'opacity-0'}`}>
+                <a href='#Team'>
+                        <img src={pointerBtn} alt="click image" loading='lazy' />
+                </a>
+                    </div>
 
                 {/* Black overlay */}
                 {!showPointer && (

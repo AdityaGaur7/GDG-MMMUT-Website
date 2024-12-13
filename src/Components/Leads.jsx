@@ -7,7 +7,7 @@ function Leads() {
 
   return (
     <div className='h-fit w-full p-[2rem] flex flex-col flex-wrap'>
-      <h1 className='font-bold text-4xl text-red-400 m-5 justify-self-center pb-[2rem]'>Core Team of GDG-MMMUT</h1>
+      <h1 id='Team' className='font-bold text-4xl text-red-400 m-5 justify-self-center pb-[2rem]'>Core Team of GDG-MMMUT</h1>
       <div className='w-full h-[90%] flex flex-row justify-around p-5 '>
         {/* md:flex md:flex-row sm:flex sm:flex-row */}
         <div className='w-[30%] h-[100%] bg-blue-200 p-[2rem] '>
